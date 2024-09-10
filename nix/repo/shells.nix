@@ -35,6 +35,9 @@ in
           category = "rendering";
           package = inputs.nixpkgs.mdbook;
         }
+        {
+          package = inputs.nixpkgs.zig;
+        }
       ];
     };
   }
