@@ -7,7 +7,9 @@
 .config
 .data
 .run
-.direnv/
+.direnv
+.zig-cache
+zig-out
 
 # nixago: ignore-linked-files
 /lefthook.yml
