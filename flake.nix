@@ -21,5 +21,5 @@
         (nixago "configs")
         (devshells "shells")
       ];
-    };
+    } {devShells = std.harvest inputs.self ["repo" "shells"];};
 }
