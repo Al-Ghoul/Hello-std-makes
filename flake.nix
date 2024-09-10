@@ -1,8 +1,9 @@
 {
   description = "CONFIGURE-ME";
 
+  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   inputs.std.url = "github:divnix/std";
-  inputs.nixpkgs.follows = "std/nixpkgs";
+  inputs.std.inputs.nixpkgs.follows = "nixpkgs";
   inputs.std.inputs.devshell.url = "github:numtide/devshell";
   inputs.std.inputs.nixago.url = "github:nix-community/nixago";
 
