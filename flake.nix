@@ -1,5 +1,5 @@
 {
-  description = "CONFIGURE-ME";
+  description = "Hello-std-makes";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
