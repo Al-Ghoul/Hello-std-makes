@@ -21,8 +21,14 @@
     extra-trusted-public-keys = "devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=";
     extra-substituters = "https://devenv.cachix.org";
   };
-
-  outputs = {std, ...} @ inputs:
+  outputs = {
+    std,
+    nixpkgs,
+    ...
+  } @ inputs: let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in
     std.growOn {
       inherit inputs;
       cellsFrom = ./nix;
@@ -31,5 +37,8 @@
         (nixago "configs")
         (devshells "shells")
       ];
-    } {devShells = std.harvest inputs.self ["repo" "shells"];};
+    } {
+      devShells = std.harvest inputs.self ["repo" "shells"];
+      hydraJobs = import makes/tests/main.nix {__nixpkgs__ = pkgs;};
+    };
 }
