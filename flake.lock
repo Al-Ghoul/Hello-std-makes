@@ -211,6 +211,26 @@
         "type": "github"
       }
     },
+    "makes": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1724357194,
+        "narHash": "sha256-SpLconQl3/CGhgY8V9i4LbouIetQwHs+BajfA13qYkE=",
+        "owner": "fluidattacks",
+        "repo": "makes",
+        "rev": "cf2105dee74e005b0c302d39d58c869c011802dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fluidattacks",
+        "repo": "makes",
+        "type": "github"
+      }
+    },
     "nixago": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -442,6 +462,7 @@
     },
     "root": {
       "inputs": {
+        "makes": "makes",
         "nixpkgs": "nixpkgs",
         "std": "std"
       }
