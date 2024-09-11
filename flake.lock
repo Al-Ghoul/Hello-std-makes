@@ -218,17 +218,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1724357194,
-        "narHash": "sha256-SpLconQl3/CGhgY8V9i4LbouIetQwHs+BajfA13qYkE=",
-        "owner": "fluidattacks",
-        "repo": "makes",
-        "rev": "cf2105dee74e005b0c302d39d58c869c011802dd",
-        "type": "github"
+        "lastModified": 1726082442,
+        "narHash": "sha256-4r9ahQFFeGV8VgF+axCmMWm16Yvxo+2Bwv4FH7G2k54=",
+        "ref": "refs/heads/main",
+        "rev": "c29028124fadc3d62d06feb8c9b336c90f951e09",
+        "revCount": 1358,
+        "type": "git",
+        "url": "file:///home/alghoul/repos/makes"
       },
       "original": {
-        "owner": "fluidattacks",
-        "repo": "makes",
-        "type": "github"
+        "type": "git",
+        "url": "file:///home/alghoul/repos/makes"
       }
     },
     "nixago": {

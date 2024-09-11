@@ -12,7 +12,7 @@
       };
     };
     makes = {
-      url = "github:fluidattacks/makes";
+      url = "github:Al-Ghoul/makes";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
