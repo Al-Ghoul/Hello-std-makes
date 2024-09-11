@@ -15,8 +15,4 @@ _: {
     enable = true;
     targets = ["/"];
   };
-  formatNix = {
-    enable = true;
-    targets = ["/nix" "/flake.nix" "/makes.nix"];
-  };
 }
