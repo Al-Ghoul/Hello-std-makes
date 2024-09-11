@@ -14,9 +14,7 @@ in
     default = {
       name = "CONFIGURE-ME";
 
-      imports = [
-        std.devshellProfiles.default
-      ];
+      imports = [std.devshellProfiles.default];
 
       # Tool Homepage: https://nix-community.github.io/nixago/
       # This is Standard's devshell integration.
@@ -35,8 +33,10 @@ in
           category = "rendering";
           package = inputs.nixpkgs.mdbook;
         }
+        {package = inputs.nixpkgs.zig;}
         {
-          package = inputs.nixpkgs.zig;
+          package = inputs.makes.packages.default;
+          help = "A software supply chain framework powered by Nix.";
         }
       ];
     };
