@@ -23,3 +23,5 @@ treefmt.toml
 # nixago-auto-created: mdbook-build-folder
 docs/build
 docs/book
+
+result
